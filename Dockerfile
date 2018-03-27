@@ -20,17 +20,17 @@ EXPOSE 8080
 
 # Define environment variables
 # Application Insights
-ENV APPINSIGHTS_KEY=
+ENV APPINSIGHTS_KEY=b66fcd0f-fb26-4828-882d-a8149ed8d824
 ENV CHALLENGEAPPINSIGHTS_KEY=23c6b1ec-ca92-4083-86b6-eba851af9032
 
 # Challenge Logging
-ENV TEAMNAME=
+ENV TEAMNAME=ContainersOnFire
 
 # AMQP
-ENV AMQPURL=
+ENV AMQPURL=amqp://defaultrabbit-rabbitmq-ha:5672
 
 # Mongo/Cosmos
-ENV MONGOURL=
+ENV MONGOURL=mongodb://defaultmongo-mongodb
 
 
 ENTRYPOINT ["dotnet", "captureorderack.dll"]
